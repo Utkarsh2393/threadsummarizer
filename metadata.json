@@ -1,0 +1,5 @@
+{
+  "name": "ThreadSummarizer",
+  "description": "An AI-powered assistant that instantly summarizes online threads, articles, and discussions into clear, easy-to-understand conclusions using Google Search Grounding.",
+  "requestFramePermissions": []
+}
