@@ -1,127 +1,87 @@
 🧵 Thread Analyzer (TL;DR)
 
-Thread Analyzer is a web-based AI tool that summarizes long Reddit discussion threads into clear, concise insights using the Gemini API.
-It helps users save time by extracting the essence of conversations, key viewpoints, and overall sentiment — all in seconds.
+Thread Analyzer is a web-based AI tool that summarizes long Reddit discussion threads into short, meaningful insights using the Gemini API.
+It helps users quickly understand key viewpoints and overall sentiment without reading hundreds of comments.
 
 TL;DR — Get the essence, skip the noise.
 
 🚀 Problem Statement
 
-Online discussion platforms like Reddit contain valuable information, but important insights are often buried under hundreds of comments.
-Reading entire threads is time-consuming and overwhelming.
+Reddit discussions often contain useful information, but important insights are buried under long comment threads.
+Reading everything manually is time-consuming and inefficient.
 
 💡 Solution
 
-Thread Analyzer solves this problem by:
-
-Fetching Reddit thread data
-
-Using AI (Gemini API) to understand context
-
-Generating:
-
-A short summary
-
-Key discussion points
-
-Overall sentiment of the thread
-
-This allows users to quickly understand what the community is saying without reading everything.
+Thread Analyzer solves this by:
+- Fetching Reddit thread data
+- Understanding context using AI
+- Generating a concise summary
+- Highlighting key discussion points
+- Identifying overall sentiment
 
 ✨ Features
 
-🔗 Paste any public Reddit thread URL
-
-🧠 AI-generated discussion summary
-
-📌 Key takeaways in bullet points
-
-😊 Overall sentiment analysis (Positive / Mixed / Negative / Neutral)
-
-🎨 Calm, modern, and responsive UI
-
-⚡ Fast and easy to use
+- Paste any public Reddit thread URL  
+- AI-generated summaries using Gemini  
+- Key takeaways in bullet points  
+- Sentiment analysis (Positive / Neutral / Mixed / Negative)  
+- Clean and responsive UI  
+- Fast and easy to use  
 
 🛠️ Tech Stack
-Frontend
 
-HTML
+## Frontend
+- HTML  
+- CSS  
+- JavaScript  
+- React (Vite)
 
-CSS
+## Backend
+- Node.js  
+- Express.js  
 
-JavaScript
-
-React (Vite)
-
-Backend
-
-Node.js
-
-Express.js
-
-APIs
-
-Gemini API – for summarization and analysis
-
-Reddit Public JSON API – for fetching thread data
+## APIs
+- Google Gemini API  
+- Reddit Public JSON APIa
 
 🧠 How It Works
 
-User pastes a Reddit thread URL
-
-Frontend sends the URL to the backend
-
-Backend:
-
-Fetches thread content from Reddit
-
-Sends relevant text to Gemini API
-
-Gemini returns:
-
-Summary
-
-Key insights
-
-Sentiment
-
-Results are displayed on the UI
+1. User pastes a Reddit thread URL  
+2. Frontend sends the request to the backend  
+3. Backend fetches the thread data  
+4. Text is sent to Gemini API  
+5. Gemini returns:
+   - Summary  
+   - Key insights  
+   - Sentiment  
+6. Results are displayed on the UI
 
 📂 Project Structure
+
 thread-analyzer/
 ├── frontend/
 │   ├── src/
 │   ├── public/
 │   └── package.json
-│
 ├── backend/
 │   ├── server.js
 │   ├── package.json
 │   └── .env
-│
 └── README.md
 
 ⚙️ Setup Instructions
-1️⃣ Clone or Download the Repository
-git clone <repository-url>
 
+## 1. Clone the repository
+git clone https://github.com/Utkarsh2393/threadsummarizer
 
-or download ZIP from GitHub and extract.
-
-2️⃣ Frontend Setup
+## 2. Frontend setup
 cd frontend
 npm install
 npm run dev
 
-3️⃣ Backend Setup
+## 3. Backend setup
 cd backend
 npm install
-
-
-Create a .env file:
-
-GEMINI_API_KEY=your_api_key_here
-
 
 Start backend:
 
@@ -129,43 +89,36 @@ node server.js
 
 🔐 API Key Note
 
-Gemini API key is stored securely using environment variables
-
-API keys are not exposed on the frontend
+API keys are stored using environment variables and are not exposed on the frontend.
 
 🧪 Demo Mode (Hackathon Friendly)
 
-If live Reddit fetching fails due to network restrictions, the app can still demonstrate:
+In case live Reddit fetching fails due to network or API limitations, the application can still demonstrate:
 
-UI flow
+- Complete UI flow  
+- AI-based summarization using sample thread data  
 
-AI summarization using sample data
+This ensures smooth demo and evaluation during hackathons.
 
 🎯 Hackathon Relevance
 
-✅ Solves a real-life problem (information overload)
-
-✅ Strong use of Gemini API
-
-✅ Open innovation domain
-
-✅ Clear AI value beyond a basic chatbot
+- Solves a real-world problem: information overload  
+- Strong and practical use of the Gemini API  
+- Fits well under open innovation themes  
+- Demonstrates applied AI beyond a basic chatbot  
 
 👥 Team
 
-Team Name: Your Team Name
-
-Members: Add names here
+Team Name: PromptX
+Members: Indira Verma
 
 📌 Future Improvements
 
-Support for other platforms (Twitter/X, forums)
+- Support for additional platforms (X / forums)  
+- User history and saved summaries  
+- More detailed sentiment breakdown  
+- Chrome extension version  
 
-User history & saved summaries
-
-Advanced sentiment breakdown
-
-Chrome extension version
 
 📜 License
 
